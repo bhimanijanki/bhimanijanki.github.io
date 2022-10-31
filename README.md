@@ -1,1 +1,0 @@
-# bhimanijanki.github.io
