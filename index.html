@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b46">
+  <meta name="description" content="Janki Bhimani is a Rising Scholar Associate Professor at Florida International University. Her research advances storage systems, AI infrastructure, and resilient computing.">
+  <meta property="og:title" content="Janki Bhimani | Computer Systems Research">
+  <meta property="og:description" content="Research in storage systems, AI infrastructure, and resilient computing at Florida International University.">
+  <title>Janki Bhimani | Associate Professor, FIU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #102b46;
+      --navy-2: #1a3c5b;
+      --teal: #087e83;
+      --ink: #1d2935;
+      --muted: #596775;
+      --line: #dce4e9;
+      --paper: #ffffff;
+      --wash: #f4f7f9;
+      --warm: #f7f5f0;
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 82px; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: "DM Sans", sans-serif; font-size: 16px; line-height: 1.7; }
+    a { color: var(--teal); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: var(--navy); }
+    a:focus-visible, button:focus-visible { outline: 3px solid #e6a23c; outline-offset: 3px; }
+    .skip { position: absolute; left: -9999px; top: 0; background: white; padding: .75rem 1rem; z-index: 100; }
+    .skip:focus { left: 1rem; }
+    .wrap { width: min(var(--max), calc(100% - 48px)); margin-inline: auto; }
+    .site-header { background: rgba(255,255,255,.97); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; backdrop-filter: blur(12px); }
+    .nav { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+    .brand { color: var(--navy); font-weight: 700; text-decoration: none; letter-spacing: -.025em; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 1.15rem; align-items: center; }
+    .nav-links a { font-size: .9rem; color: var(--muted); text-decoration: none; font-weight: 600; }
+    .nav-links a:hover { color: var(--teal); }
+    .hero { background: linear-gradient(120deg, #f3f7f9 0%, #fff 65%, #f8f6f0 100%); padding: 76px 0 68px; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(220px, .8fr); gap: 64px; align-items: center; }
+    .eyebrow { color: var(--teal); text-transform: uppercase; letter-spacing: .13em; font-size: .76rem; font-weight: 700; margin: 0 0 14px; }
+    h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; color: var(--navy); line-height: 1.18; letter-spacing: -.025em; }
+    h1 { font-size: clamp(2.7rem, 5.2vw, 4.6rem); margin: 0 0 13px; }
+    .role { font-size: clamp(1.1rem, 2vw, 1.35rem); line-height: 1.5; font-weight: 600; color: var(--navy-2); margin: 0 0 20px; }
+    .hero-copy { max-width: 700px; color: #394957; font-size: 1.08rem; }
+    .hero-copy p { margin: 0 0 16px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 27px; }
+    .btn { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; padding: 10px 17px; border: 1px solid var(--navy); border-radius: 5px; background: var(--navy); color: white; font-size: .9rem; font-weight: 700; text-decoration: none; }
+    .btn:hover { background: var(--navy-2); color: white; }
+    .btn.secondary { background: transparent; color: var(--navy); }
+    .btn.secondary:hover { background: white; }
+    .portrait-wrap { max-width: 310px; justify-self: end; width: 100%; }
+    .portrait { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; border-radius: 6px; box-shadow: 18px 18px 0 #dce9e9; background: #e8edf0; }
+    .portrait-note { font-size: .8rem; color: var(--muted); margin-top: 24px; text-align: right; }
+    .social { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; }
+    .social a { font-size: .88rem; font-weight: 600; }
+    .metrics { border-bottom: 1px solid var(--line); background: white; }
+    .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); padding: 24px 0; }
+    .metric { padding: 0 22px; border-left: 1px solid var(--line); }
+    .metric:first-child { border-left: 0; padding-left: 0; }
+    .metric strong { display: block; color: var(--navy); font-family: "Source Serif 4", Georgia, serif; font-size: clamp(1.7rem, 3vw, 2.35rem); line-height: 1.2; }
+    .metric span { display: block; color: var(--muted); font-size: .82rem; margin-top: 5px; }
+    section { padding: 76px 0; }
+    section.alt { background: var(--wash); }
+    .section-head { max-width: 760px; margin-bottom: 34px; }
+    .section-head h2 { font-size: clamp(2rem, 3.4vw, 2.8rem); margin: 0 0 12px; }
+    .section-head p { margin: 0; color: var(--muted); }
+    .kicker { color: var(--teal); text-transform: uppercase; letter-spacing: .12em; font-weight: 700; font-size: .75rem; margin: 0 0 8px; }
+    .research-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .research-card { border: 1px solid var(--line); border-radius: 7px; padding: 25px 25px 22px; background: white; }
+    .research-card .num { color: var(--teal); font-size: .76rem; font-weight: 700; letter-spacing: .1em; }
+    .research-card h3 { font-size: 1.35rem; margin: 8px 0 10px; }
+    .research-card p { margin: 0; color: var(--muted); font-size: .96rem; }
+    .feature { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: start; }
+    .feature h3 { font-size: 1.45rem; margin: 0 0 10px; }
+    .feature p { color: var(--muted); margin-top: 0; }
+    .project-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+    .project-list li { padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .project-list strong { display: block; color: var(--navy); margin-bottom: 4px; }
+    .project-list span { color: var(--muted); font-size: .92rem; }
+    .highlight-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .highlight { padding: 24px; background: white; border: 1px solid var(--line); border-radius: 7px; }
+    .highlight .label { color: var(--teal); font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .highlight h3 { font-size: 1.2rem; margin: 10px 0; }
+    .highlight p { color: var(--muted); font-size: .92rem; margin: 0; }
+    .pub-list { list-style: none; padding: 0; margin: 0; }
+    .pub-list li { padding: 19px 0; border-bottom: 1px solid var(--line); }
+    .pub-list li:first-child { border-top: 1px solid var(--line); }
+    .pub-title { color: var(--navy); font-weight: 700; }
+    .pub-title a { color: var(--navy); text-decoration: none; }
+    .pub-title a:hover { color: var(--teal); text-decoration: underline; }
+    .pub-meta { color: var(--muted); font-size: .92rem; margin-top: 4px; }
+    .pub-badge { display: inline-block; margin-top: 8px; color: var(--teal); font-size: .77rem; font-weight: 700; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
+    .clean-list { margin: 0; padding-left: 1.15rem; }
+    .clean-list li { margin: 0 0 12px; }
+    .contact-panel { background: var(--navy); color: white; border-radius: 8px; padding: 34px; display: flex; justify-content: space-between; gap: 30px; align-items: center; }
+    .contact-panel h2 { color: white; font-size: 2rem; margin: 0 0 10px; }
+    .contact-panel p { color: #d7e3ed; margin: 0; }
+    .contact-panel .btn { background: white; color: var(--navy); border-color: white; white-space: nowrap; }
+    .contact-panel .btn:hover { background: #edf3f6; }
+    footer { background: #0b2035; color: #c8d4df; padding: 25px 0; font-size: .82rem; }
+    footer .foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    footer a { color: #d9eeee; }
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 32px, var(--max)); }
+      .nav { align-items: flex-start; flex-direction: column; padding: 15px 0; gap: 8px; }
+      .nav-links { gap: 10px 16px; }
+      .hero { padding: 48px 0; }
+      .hero-grid { grid-template-columns: 1fr; gap: 35px; }
+      .portrait-wrap { justify-self: start; max-width: 220px; }
+      .metric-grid { grid-template-columns: repeat(2, 1fr); gap: 22px 0; }
+      .metric:nth-child(3) { border-left: 0; padding-left: 0; }
+      .research-grid, .feature, .highlight-grid, .two-col { grid-template-columns: 1fr; }
+      section { padding: 54px 0; }
+      .contact-panel { align-items: flex-start; flex-direction: column; padding: 27px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Janki Bhimani",
+    "jobTitle": "Rising Scholar Associate Professor",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida International University"
+    },
+    "email": "jbhimani@fiu.edu",
+    "url": "https://bhimanijanki.github.io/",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=Fnv9DbgAAAAJ&hl=en",
+      "https://github.com/bhimanijanki",
+      "https://www.linkedin.com/in/jankibhimani/",
+      "https://orcid.org/0000-0002-4421-9923"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#top">Janki Bhimani</a>
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#funding">Funding &amp; impact</a>
+        <a href="#publications">Selected publications</a>
+        <a href="#teaching">Teaching &amp; mentoring</a>
+        <a href="#contact">Contact</a>
+        <a href="CV_Janki_Bhimani.pdf">Full CV ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Computer systems · Research · Education</p>
+          <h1>Janki Bhimani</h1>
+          <p class="role">Rising Scholar Associate Professor (with tenure)<br>
+            Knight Foundation School of Computing and Information Sciences<br>
+            Florida International University</p>
+          <div class="hero-copy">
+            <p>I build computing systems that make better use of data, hardware, and computation. My research sits at the intersection of storage and memory systems, AI infrastructure, and resilient computing—with a focus on turning new systems ideas into practical capabilities.</p>
+            <p>My group studies how systems can adapt to changing workloads, make informed resource decisions, and recover reliably across classical and emerging quantum-computing environments. I also work on neuro-symbolic AI tools that support STEM advising and learning.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn" href="#research">Explore my research</a>
+            <a class="btn secondary" href="CV_Janki_Bhimani.pdf">Download CV</a>
+          </div>
+          <div class="social" aria-label="Professional links">
+            <a href="https://scholar.google.com/citations?user=Fnv9DbgAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+            <a href="https://github.com/bhimanijanki" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/jankibhimani/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://orcid.org/0000-0002-4421-9923" target="_blank" rel="noopener noreferrer">ORCID ↗</a>
+          </div>
+        </div>
+        <div class="portrait-wrap">
+          <img class="portrait" src="images/Janki-Bhimani-2500x3500.png" alt="Portrait of Janki Bhimani" width="500" height="625">
+          <p class="portrait-note">Knight Foundation School of Computing and Information Sciences · FIU</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="metrics" aria-label="Research at a glance">
+      <div class="wrap metric-grid">
+        <div class="metric"><strong>$6.5M+</strong><span>Competitive research awards</span></div>
+        <div class="metric"><strong>$3M+</strong><span>Funding as principal investigator</span></div>
+        <div class="metric"><strong>60+</strong><span>Peer-reviewed publications</span></div>
+        <div class="metric"><strong>1,300+</strong><span>Google Scholar citations*</span></div>
+      </div>
+    </div>
+
+    <section id="research">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Research agenda</p>
+          <h2>Systems that adapt, optimize, and recover</h2>
+          <p>I look for opportunities where changes in device behavior, system architecture, and application needs can be brought together to enable computing that is more efficient, dependable, and useful.</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-card">
+            <span class="num">01 / STORAGE &amp; MEMORY</span>
+            <h3>Rethinking the data path</h3>
+            <p>Designing storage and memory systems that reduce data movement, improve I/O behavior, and make indexing and resource management more efficient across heterogeneous devices.</p>
+          </article>
+          <article class="research-card">
+            <span class="num">02 / AI INFRASTRUCTURE</span>
+            <h3>Systems for data- and compute-intensive AI</h3>
+            <p>Building infrastructure for AI training and inference, including checkpointing, model versioning, data preprocessing, and efficient use of CPU, GPU, memory, and storage resources.</p>
+          </article>
+          <article class="research-card">
+            <span class="num">03 / RESILIENT COMPUTING</span>
+            <h3>Reliability across classical and quantum systems</h3>
+            <p>Developing checkpointing and recovery techniques for long-running workloads, including quantum and hybrid quantum–classical applications operating under noisy, resource-constrained conditions.</p>
+          </article>
+          <article class="research-card">
+            <span class="num">04 / NEURO-SYMBOLIC AI</span>
+            <h3>AI that supports STEM learning and advising</h3>
+            <p>Combining language models with structured knowledge and symbolic reasoning to build more grounded, context-aware tools for student advising and educational decision-making.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="funding">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Research leadership</p>
+          <h2>From foundational questions to funded research</h2>
+          <p>My research is supported by competitive federal and industry programs, with projects spanning storage systems, AI infrastructure, and educational technology.</p>
+        </div>
+        <div class="highlight-grid">
+          <article class="highlight">
+            <span class="label">NSF CAREER</span>
+            <h3>Towards Efficient In-storage Indexing</h3>
+            <p>2024–2029 · Principal Investigator. Investigating ways to bring indexing closer to storage and improve the efficiency of data-intensive workloads.</p>
+          </article>
+          <article class="highlight">
+            <span class="label">NSF Core Medium</span>
+            <h3>DISCO: Disciplined Data Science for Storage I/O</h3>
+            <p>2024–2028 · PI team. Developing a disciplined framework for storage I/O management in collaboration with researchers at the University of Chicago and Argonne National Laboratory.</p>
+          </article>
+          <article class="highlight">
+            <span class="label">NSF IUSE</span>
+            <h3>AI-assisted STEM advising</h3>
+            <p>2026–2029 · Educational research on socially interactive agents to support STEM advising and student decision-making.</p>
+          </article>
+        </div>
+        <p style="margin:24px 0 0;color:var(--muted);font-size:.9rem">Additional projects include tiered-memory management, AI-training infrastructure, and access to national computing and quantum resources. See the <a href="CV_Janki_Bhimani.pdf">full CV</a> for the complete funding record.</p>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Selected work</p>
+          <h2>Recent publications</h2>
+          <p>A selection across systems, storage, AI infrastructure, quantum computing, and AI for education. For the complete and most current bibliography, visit Google Scholar or the full CV.</p>
+        </div>
+        <ul class="pub-list">
+          <li>
+            <div class="pub-title"><a href="https://github.com/bhimanijanki/bhimanijanki.github.io/blob/main/SMARTTalk-%20Teaching%20SMART%20Logs%20to%20Talk%20to%20LLMs.pdf" target="_blank" rel="noopener noreferrer">SMARTTalk: Teaching SMART Logs to Talk to LLMs ↗</a></div>
+            <div class="pub-meta">Mayur Akewar, Dongsheng Luo, Sandeep Madireddy, Janki Bhimani · USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2026.</div>
+          </li>
+          <li>
+            <div class="pub-title"><a href="https://github.com/bhimanijanki/bhimanijanki.github.io/blob/main/Holpaca%20Holistic%20and%20Adaptable%20Cache%20Management%20for%20Shared%20Environments.pdf" target="_blank" rel="noopener noreferrer">Holpaca: Holistic and Adaptable Cache Management for Shared Environments</div>
+            <div class="pub-meta">José Pedro Peixoto, Alexis Gonzales, Janki Bhimani, Raju Rangaswami, Cláudia Brito, João Paulo, Ricardo Macedo · International Conference on Performance Engineering (ICPE), 2026.</div>
+          </li>
+          <li>
+            <div class="pub-title"><a href="https://github.com/bhimanijanki/bhimanijanki.github.io/blob/main/KORAL_Knowledge_Graph_Guided_LLM_Reasoning_for_SSD_Operational_Analysis.pdf" target="_blank" rel="noopener noreferrer">KORAL: Knowledge Graph Guided LLM Reasoning for SSD Operational Analysis</div>
+            <div class="pub-meta">Mayur Akewar, Sandeep Madireddy, Dongsheng Luo, Janki Bhimani · IEEE International Parallel &amp; Distributed Processing Symposium (IPDPS), 2026.</div>
+          </li>
+          <li>
+            <div class="pub-title"><a href="https://github.com/bhimanijanki/bhimanijanki.github.io/blob/main/Aurora-%20Neuro-Symbolic%20AI%20Driven%20Advising%20Agent.pdf" target="_blank" rel="noopener noreferrer">Aurora: Neuro-Symbolic AI Driven Advising Agent ↗</a></div>
+            <div class="pub-meta">Lorena Amanda Quincoso Lugones, Christopher Kverne, Nityam Sharadkumar Bhimani, Ana Carolina Oliveira, Agoritsa Polyzou, Christine Lisetti, Janki Bhimani · ACM/SIGAPP Symposium on Applied Computing (SAC), 2026.</div>
+            <span class="pub-badge">Best Paper Award · ACM SAC ’26</span>
+          </li>
+          <li>
+            <div class="pub-title"><a href="https://github.com/bhimanijanki/bhimanijanki.github.io/blob/main/Preparation%20Meets%20Opportunity%20Seneca.pdf" target="_blank" rel="noopener noreferrer">Preparation Meets Opportunity: Enhancing Data Preprocessing for ML Training With Seneca ↗</a></div>
+            <div class="pub-meta">Omkar Desai, Ziyang Jiao, Shuyi Pei, Janki Bhimani, Bryan S. Kim · USENIX Conference on File and Storage Technologies (FAST), 2026.</div>
+          </li>
+          <li>
+            <div class="pub-title"><a href="https://github.com/bhimanijanki/bhimanijanki.github.io/blob/main/Fragment%20Eficient%20DNN%20Checkpoint%20with%20Relaxed%20Model%20Consistency.pdf" target="_blank" rel="noopener noreferrer">Fragment: Efficient DNN Checkpoint with Relaxed Model Consistency ↗</a></div>
+            <div class="pub-meta">Manoj P. Saha, Yanzhao Wu, Cláudia Brito, Raju Rangaswami, João Paulo, Ricardo Macedo, Janki Bhimani · ACM Transactions on Architecture and Code Optimization (TACO), 2026.</div>
+          </li>
+          <li>
+            <div class="pub-title"><a href="https://github.com/bhimanijanki/bhimanijanki.github.io/blob/main/Revisiting%20Noise-adaptive%20Transpilation%20in%20Quantum%20Computing-%20How%20Much%20Impact%20Does%20it%20Have%3F.pdf" target="_blank" rel="noopener noreferrer">Revisiting Noise-adaptive Transpilation in Quantum Computing: How Much Impact Does it Have? ↗</a></div>
+            <div class="pub-meta">Yuqian Huo, Jinbiao Wei, Christopher Kverne, Mayur Akewar, Janki Bhimani, Tirthak Patel · IEEE/ACM International Conference on Computer-Aided Design (ICCAD), 2025.</div>
+          </li>
+          <li>
+            <div class="pub-title"><a href="https://github.com/bhimanijanki/bhimanijanki.github.io/blob/main/Quantum%20Neural%20Networks%20Need%20Checkpointing.pdf" target="_blank" rel="noopener noreferrer">Quantum Neural Networks Need Checkpointing ↗</a></div>
+            <div class="pub-meta">Christopher Lukas Kverne, Mayur Akewar, Yuqian Huo, Tirthak Patel, Janki Bhimani · ACM Workshop on Hot Topics in Storage and File Systems (HotStorage), 2025.</div>
+          </li>
+          <li>
+            <div class="pub-title"><a href="https://github.com/bhimanijanki/bhimanijanki.github.io/blob/main/Storage%20Abstractions%20for%20SSDs-%20The%20Past%2C%20Present%2C%20and%20Future.pdf" target="_blank" rel="noopener noreferrer">Storage Abstractions for SSDs: The Past, Present, and Future ↗</a></div>
+            <div class="pub-meta">Xiangqun Zhang, Janki Bhimani, Shuyi Pei, Eunji Lee, Sungjin Lee, and collaborators · ACM Transactions on Storage (TOS), 2024.</div>
+          </li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn" href="https://scholar.google.com/citations?user=Fnv9DbgAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">All publications on Google Scholar ↗</a>
+          <a class="btn secondary" href="CV_Janki_Bhimani.pdf">Full publication list in CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="teaching">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Education &amp; academic community</p>
+          <h2>Teaching, mentoring, and service</h2>
+          <p>I bring systems research into the classroom and mentor students working across computer systems, storage, quantum computing, and AI-enabled educational technology.</p>
+        </div>
+        <div class="two-col">
+          <div>
+            <h3>Teaching &amp; mentoring</h3>
+            <ul class="clean-list">
+              <li>Teaching undergraduate and graduate computing courses, including data structures and storage systems.</li>
+              <li>Developing hands-on learning experiences using modern computing platforms and research-driven projects.</li>
+              <li>Mentoring graduate and undergraduate researchers on publication-oriented projects and professional development.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Research community &amp; recognition</h3>
+            <ul class="clean-list">
+              <li><strong>NSF CAREER Award</strong> (2024).</li>
+              <li><strong>Rising Scholar</strong>, Florida International University (2025).</li>
+              <li><strong>In the Company of Women Award</strong>, Miami-Dade County (2025).</li>
+              <li><strong>FIU Top Scholar Award</strong> for research, creative activities, and award-winning publications (2023).</li>
+              <li>Editorial, conference organization, program committee, and peer-review service in computer systems and storage research.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Background</p>
+          <h2>About Janki</h2>
+          <p>I am a computer systems researcher and educator at Florida International University’s Knight Foundation School of Computing and Information Sciences. Before joining FIU, I earned my Ph.D. in Computer Engineering from Northeastern University and worked in industry as a performance architect intern with Samsung Semiconductor. My work is collaborative by design, connecting systems researchers, domain scientists, educators, and industry partners.</p>
+        </div>
+        <div class="two-col">
+          <div>
+            <h3>Research areas</h3>
+            <p>Storage and memory systems · Computer architecture · AI infrastructure · Performance modeling · Quantum-classical resilience · Neuro-symbolic AI for education</p>
+          </div>
+          <div>
+            <h3>Academic &amp; professional links</h3>
+            <ul class="clean-list">
+              <li><a href="https://github.com/Damrl-lab" target="_blank" rel="noopener noreferrer">DaMRL Lab on GitHub ↗</a></li>
+              <li><a href="CV_Janki_Bhimani.pdf">Curriculum vitae (PDF)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="contact">
+      <div class="wrap">
+        <div class="contact-panel">
+          <div>
+            <h2>Get in touch</h2>
+            <p>For research collaborations, student research opportunities, and academic inquiries.</p>
+            <p style="margin-top:10px"><a href="mailto:jbhimani@fiu.edu" style="color:#fff">jbhimani@fiu.edu</a> · CASE 238B, Florida International University</p>
+          </div>
+          <a class="btn" href="mailto:jbhimani@fiu.edu">Email Janki ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap foot">
+      <span>© <span id="year">2026</span> Janki Bhimani · Florida International University</span>
+      <span><a href="CV_Janki_Bhimani.pdf">CV</a> · <a href="https://orcid.org/0000-0002-4421-9923">ORCID</a> · <a href="https://github.com/bhimanijanki">GitHub</a></span>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
